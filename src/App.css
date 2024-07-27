@@ -1,0 +1,93 @@
+/* ======================================== CSS RESET ============================================ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    text-decoration: none;
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+    text-decoration: none;
+}
+
+/* ======================================== FONTS ============================================ */
+
+@font-face {
+    font-family: "MarkaziText";
+    src:
+      url("./assets/fonts/MarkaziText.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Karla";
+    src:
+      url("./assets/fonts/Karla.woff") format("woff");
+  }
+/* ======================================== VARIABLES ============================================ */
+
+:root{
+    /* COLORS */
+    --primary-color:#495E57;
+    --secondary-color:#F4CE14;
+    --gray:#E3E3E3;
+    --black:#000000;
+    --white:#FFFFFF;
+
+    /* FONTS */
+
+    --primary-font:"MarkaziText";
+    --secondary-font:"Karla";
+
+    /* MOBILE FONT SIZES */
+
+    --title:36px;
+    --hero-text:18px; 
+    --card-title:12px;
+    --card-text:8px;
+    --testimonial-title:14px;
+    --testimonial-text:6px;
+
+
+      /* MOBILE FONT SIZES */
+
+      --title:64px;
+      --hero-text:16px; 
+      --card-title:12px;
+      --card-text:8px;
+      --testimonial-title:14px;
+      --testimonial-text:6px;
+}
+ /* ======================================== UTILS ============================================ */
+
+.flex{
+    display:flex;
+}
+
+
+ /* ======================================== HEADER ============================================ */
+
