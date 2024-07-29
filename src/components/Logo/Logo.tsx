@@ -10,8 +10,9 @@ interface ILogo{
 }
 
 const Logo: React.FC<ILogo> = ({type}) => {
+  console.log(type)
   return (
-        <img src={type == 'primary' ? logo : secondary_logo } alt="little-lemon-logo" className="navbar__logo"/>
+        <img src={type == 'secondary'? secondary_logo : logo } alt="little-lemon-logo" className="navbar__logo"/>
   )
 }
 
