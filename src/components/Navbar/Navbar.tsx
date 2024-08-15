@@ -22,7 +22,6 @@ const Navbar = () => {
   const [isMenuOpen,setMenuOpen] = useState<boolean>(false)
 
   const width = useScreenWidth()
-  const menuRef = useRef<HTMLDivElement|null>(null)  
 
   const handleMenu = () =>{
     setMenuOpen(!isMenuOpen)
@@ -55,7 +54,7 @@ const Navbar = () => {
         <img src={menu} className='icon' onClick={handleMenu} />
         {isMenuOpen ? 
         <div className='absolut navbar__backdrop'>
-          <div className="absolut navbar__menu-background" ref={menuRef}>
+          <div className="absolut navbar__menu-background">
              <div className='navbar__mobileMenu-buttons'>
               <img src={back_arrow } alt="close-button" className='icon' onClick={handleMenu} />
             </div> 
