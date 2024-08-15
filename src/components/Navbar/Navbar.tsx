@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import {useState } from 'react'
 
 import useScreenWidth from '@/hooks/useScreenWidth'
 
@@ -27,19 +27,6 @@ const Navbar = () => {
     setMenuOpen(!isMenuOpen)
   }
 
-  useEffect(() => {
-    const handleClickOutside = (e: MouseEvent) => {
-      if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
-        setMenuOpen(false)
-      }
-    }
-
-    document.addEventListener("mousedown", handleClickOutside)
-
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside)
-    }
-  }, [])
 
   return (
     <nav className='flex navbar__container flex__center'>
