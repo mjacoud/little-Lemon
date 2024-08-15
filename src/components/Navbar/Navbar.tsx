@@ -19,7 +19,7 @@ const menu_items=[
 ]
 
 const Navbar = () => {
-  const [isMenuOpen,setMenuOpen] = useState<boolean>(true)
+  const [isMenuOpen,setMenuOpen] = useState<boolean>(false)
 
   const width = useScreenWidth()
   const menuRef = useRef<HTMLDivElement|null>(null)  
@@ -43,7 +43,7 @@ const Navbar = () => {
   }, [])
 
   return (
-    <nav className='flex navbar__container'>
+    <nav className='flex navbar__container flex__center'>
       {
       width > 1200 ? <ul className='flex flex__center gap__sm'>
         {menu_items.map((item)=>
