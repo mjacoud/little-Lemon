@@ -50,7 +50,7 @@ const Navbar = () => {
                {menu_items.map((item)=>
                 <li key={item}><Link to={`/${item}`} className='MobileNavbar__item'>{item}</Link></li>
                 )}
-                <Button label='Reserve a Table' type='secondary' size='large' link='reserve-a-table'/>
+                <Button label='Reserve a Table' type='secondary' link='reserve-a-table'/>
             </ul>
           </div>
         </div>: null}
