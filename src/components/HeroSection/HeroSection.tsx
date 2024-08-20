@@ -16,7 +16,7 @@ const width =useScreenWidth()
                   <h2 className='title'>Little Lemon</h2>
                   <p className='subtitle'><i>Rio de janeiro</i></p>
                   <p className='description'>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-                  <Button label='Reserve a Table' type='secondary' link='reserve-a-table' />
+                  <Button label='Reserve a Table' type='secondary' link='reserve-a-table' size='small' />
                 </div>
               </div> 
               :
@@ -25,7 +25,7 @@ const width =useScreenWidth()
                     <h2 className='title'>Little Lemon</h2>
                     <p className='subtitle'><i>Rio de janeiro</i></p>
                     <p className='description'>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-                    <div className='button__hero flex flex__center'><Button label='Reserve a Table' type='secondary' link='reserve-a-table' /></div>
+                    <div className='button__hero flex flex__center'><Button label='Reserve a Table' type='secondary' link='reserve-a-table' size="large"/></div>
                   </div>
                   <img src={mediterranian_pasta} alt='mediterranian-pasta' className='image'/>
               </div>
