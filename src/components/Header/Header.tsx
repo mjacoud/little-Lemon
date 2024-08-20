@@ -4,7 +4,7 @@ import Navbar from "../Navbar/Navbar"
 export const Header = () => {
   return (
     <header className="flex flex__space-between header__container">
-        <Logo/>
+        <Logo type="primary"/>
         <Navbar/>
     </header>
   )
