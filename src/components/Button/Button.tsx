@@ -5,14 +5,15 @@ interface ButtonProps{
     label:string;
     onClick?:()=>void;
     link?:string;
+    size:string
 }
-const Button:React.FC<ButtonProps> = ({type,label,onClick,link}) => {
+const Button:React.FC<ButtonProps> = ({type,label,onClick,link,size}) => {
     const typeStyle = type =="primary" ? "button--primary" : "button--secondary"
-    
+    const setSize = size == "small" ? "button--small" : "button--large"
 
   return (
         <Link to={`/${link}`}>
-    <button className={`${typeStyle} button`} onClick={onClick}>
+    <button className={`${typeStyle} button ${setSize}`} onClick={onClick}>
         {label}
     </button>
         </Link>
