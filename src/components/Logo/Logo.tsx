@@ -12,8 +12,6 @@ interface ILogo{
 }
 
 const Logo: React.FC<ILogo> = ({type}) => {
-  console.log(type)
-
   const getLogo = (type:string) => {
     if (type == "primary"){
       return logo
