@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
 
 interface ButtonProps{
-    type:string;
+    style:string;
     label:string;
     onClick?:()=>void;
     link?:string;
     size:string
+    type?: "submit" | "button" |"reset"
 }
-const Button:React.FC<ButtonProps> = ({type,label,onClick,link,size}) => {
-    const typeStyle = type =="primary" ? "button--primary" : "button--secondary"
+const Button:React.FC<ButtonProps> = ({style,label,onClick,link,size,type}) => {
+    const typeStyle = style =="primary" ? "button--primary" : "button--secondary"
     const setSize = size == "small" ? "button--small" : "button--large"
     const linkExist = link ? 
     <Link to={`/${link}`}>
@@ -17,7 +18,7 @@ const Button:React.FC<ButtonProps> = ({type,label,onClick,link,size}) => {
     </button>
         </Link>
     : 
-    <button className={`${typeStyle} button ${setSize}`} onClick={onClick}>
+    <button type={type} className={`${typeStyle} button ${setSize}`} onClick={onClick}>
         {label}
     </button>
     
