@@ -28,8 +28,6 @@ export const GuestCounter:React.FC<GuestCounterProps> = ({setReservation,reserva
     });
 }
 
-      console.log(`guest number é ${reservation.guests}`)
-      console.log(reservation)
   return (
     <>
 

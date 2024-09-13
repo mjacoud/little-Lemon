@@ -7,7 +7,7 @@ export const Footer = () => {
 
   return (
       <>
-      {width < 1200 ? 
+      {width < 766 ? 
         <div className="background--primary footer__container">
             <div className="flex flex__center flex__column gap__sm">
                 <h3 className="footer__title">Navigation</h3>
@@ -29,12 +29,12 @@ export const Footer = () => {
                 <Link className="footer__link" to={""}>Facebook</Link>
                 <Link className="footer__link" to={""}>Instagram</Link>
                 <Link className="footer__link" to={""}>Whatsapp</Link>
-            <Logo type={width < 1200 ? 'icon': "secondary"}/>
+            <Logo type={width > 766 ? 'icon': "secondary"}/>
             </div>
          </div>
         :
-        
-        <div className="background--primary footer__container flex">
+        <>
+        <div className={`background--primary footer__container flex ${width >1023 ? 'flex__center' : ''}`}>
         <div className="flex flex__center flex__column gap__sm">
         <h3 className="footer__title">Navigation</h3>
         <Link className="footer__link" to={""}>Home</Link>
@@ -55,10 +55,13 @@ export const Footer = () => {
                 <Link className="footer__link" to={""}>Facebook</Link>
                 <Link className="footer__link" to={""}>Instagram</Link>
                 <Link className="footer__link" to={""}>Whatsapp</Link>
-                <Logo type={width < 1200 ? 'icon': "secondary"}/>
-                </div>
                 </div>
                 
+                </div>
+            <div className="flex flex__center background--primary">
+                <Logo type={width < 766 ? 'icon': "secondary"}/>
+            </div>
+            </>
             }
             </>
             

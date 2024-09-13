@@ -30,8 +30,8 @@ const currentWeekday = dateObject.getDay()
 const currentMonth = dateObject.getMonth()
 const currentDay = dateObject.getDate()
 
-const futureDate = new Date(dateObject);
-    futureDate.setDate(dateObject.getDate() + counter);
+const futureDate = new Date(dateObject); 
+futureDate.setDate(dateObject.getDate() + counter);
 
   const handleWeekDay = () =>{
     if (counter == 0 ){

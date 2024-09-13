@@ -1,13 +1,16 @@
 
 import { Carrossel } from "../Carrossel/Carrossel"
+import { Container } from "../Container/Container"
 
 export const Testimonials = () => {
   return (
     <>
-      <div className='flex flex__space-between specials__header flex__center'>
-            <h2 className='specials__title'>Testimonials</h2>
+      <div className='testimonials__header'>
+            <h2 className='specials__title'>TESTIMONIALS</h2>
           </div>
-       <Carrossel type="testimonials"/>
+       <Container>
+         <Carrossel type="testimonials"/>
+       </Container>
     </>
   )
 }
